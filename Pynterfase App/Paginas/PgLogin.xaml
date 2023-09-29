@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pynterfase_App.Paginas.PgLogin"
+             Title="PgLogin">
+
+    <Grid>
+        <Image Source="bg_login_pynterfase.png" Aspect="AspectFill"/>
+
+        <VerticalStackLayout VerticalOptions="Center" Padding="10">
+            <Frame BackgroundColor="#BF1C1C1C" Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Iniciar Sesion" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <Line BackgroundColor="White"></Line>
+                    <Label Text="Correo" TextColor="White"/>
+                    <Entry Keyboard="Email" BackgroundColor="White" TextColor="Black" x:Name="txtMail" Text="andresfelipeibanezcuta2@gmail.com"/>
+                    <Label Text="Contraseña" TextColor="White" />
+                    <Entry Keyboard="Text" TextColor="Black" BackgroundColor="White" IsPassword="True" x:Name="txtPassword" Text="lolxd24"/>
+                    <Button x:Name="btnLogin" HorizontalOptions="Fill" Text="INICIAR SESIÓN" TextColor="Black" BackgroundColor="White" Clicked="btnLogin_Clicked"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </Grid>
+    
+</ContentPage>

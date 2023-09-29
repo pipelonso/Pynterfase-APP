@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pynterfase_App.Paginas.PgInfoProject"
+             Title="PgInfoProject">
+    <Grid>
+
+        <Image Source="bg_info_proj.png" Aspect="AspectFill" x:Name="imgBack"/>
+
+        
+        <ScrollView>
+            <VerticalStackLayout Padding="10" BackgroundColor="#7F44CD2A" x:Name="bg_Vertical" Spacing="10">
+                <Frame BackgroundColor="white" >
+                    <VerticalStackLayout Spacing="10">
+                        <Label x:Name="lblProjName" Text="---" FontSize="30" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="ESTADO" TextColor="Black" HorizontalTextAlignment="Center"/>
+                        <Grid>
+                            <Label x:Name="lblVisibilidad"  Text="---" HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="Black" VerticalOptions="Center" VerticalTextAlignment="Center"/>
+                            <Frame BackgroundColor="Gray" Padding="5" HorizontalOptions="End" x:Name="frPrivacy">
+                                <Switch IsToggled="false" HorizontalOptions="End" x:Name="swPrivacy" BackgroundColor="Gray" Toggled="swPrivacy_Toggled"/>
+                            </Frame>
+                        </Grid>
+                        
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="white">
+                    <VerticalStackLayout>
+                        <Label Text="Usuarios en este proyecto" TextColor="Black" FontSize="25"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <VerticalStackLayout x:Name="Contenido" Spacing="10" Padding="5"  >
+
+                    
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <ScrollView x:Name="PAddUser">
+            <VerticalStackLayout Padding="10">
+                <Frame BackgroundColor="#E5989898">
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="AGREGAR USUARIO" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+                        <Line BackgroundColor="Black"/>
+                        <Label Text="Buscar Usuario" TextColor="Black"/>
+                        <Entry Placeholder="user@gm--.com" Keyboard="Email" HorizontalOptions="FillAndExpand" TextColor="Black" BackgroundColor="AliceBlue" x:Name="txtSearchUser"/>
+                        <Grid >
+                            <Label Text="Buscar Por Nombre" TextColor="Black" HorizontalOptions="Start"></Label>
+                            <Switch x:Name="swSearcByName" HorizontalOptions="End"/>
+                        </Grid>
+                        <Button Text="BUSCAR" TextColor="Black" BackgroundColor="White" BorderColor="#CDCDCD" HorizontalOptions="FillAndExpand" Clicked="btnSearchUser_Clicked" x:Name="btnSearchUser"/>
+                        <Button Text="CANCELAR" TextColor="Black" BackgroundColor="White" BorderColor="#CDCDCD" HorizontalOptions="FillAndExpand" Clicked="btnCloseAddUser_Clicked" x:Name="btnCloseAddUser"/>
+                        <Line BackgroundColor="Black" />
+                        
+                        <Label Text="RESULTADOS" TextColor="Black"/>
+                        <VerticalStackLayout x:Name="SearchContenido" Spacing="10">
+                            
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
