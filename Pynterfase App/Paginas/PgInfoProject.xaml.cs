@@ -12,8 +12,8 @@ public partial class PgInfoProject : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false);
-
-		ClProyectoL objPROJL = new ClProyectoL();
+        PAddUser.IsVisible = false;
+        ClProyectoL objPROJL = new ClProyectoL();
 		Proyecto proj = objPROJL.GetProjectById(GlobalApp.CurrenIdProject);
 
 		lblProjName.Text = proj.nombreProyecto;
@@ -328,7 +328,7 @@ public partial class PgInfoProject : ContentPage
             PAddUser.IsVisible = false;
             mtdDrawUI();
             SearchContenido.Clear();
-
+            btnAdd.IsVisible = true;
         }
         else
         {
@@ -345,6 +345,12 @@ public partial class PgInfoProject : ContentPage
 
         PAddUser.IsVisible = false;        
         SearchContenido.Clear();
+        btnAdd.IsVisible = true;
+    }
 
+    private void btnAdd_Clicked(object sender, EventArgs e)
+    {
+        PAddUser.IsVisible = true;
+        btnAdd.IsVisible = false;
     }
 }

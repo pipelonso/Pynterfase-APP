@@ -13,10 +13,11 @@
                     <Label Text="Iniciar Sesion" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
                     <Line BackgroundColor="White"></Line>
                     <Label Text="Correo" TextColor="White"/>
-                    <Entry Keyboard="Email" BackgroundColor="White" TextColor="Black" x:Name="txtMail" Text="andresfelipeibanezcuta2@gmail.com"/>
+                    <Entry Keyboard="Email" BackgroundColor="White" TextColor="Black" x:Name="txtMail" />
                     <Label Text="Contraseña" TextColor="White" />
-                    <Entry Keyboard="Text" TextColor="Black" BackgroundColor="White" IsPassword="True" x:Name="txtPassword" Text="lolxd24"/>
+                    <Entry Keyboard="Text" TextColor="Black" BackgroundColor="White" IsPassword="True" x:Name="txtPassword" />
                     <Button x:Name="btnLogin" HorizontalOptions="Fill" Text="INICIAR SESIÓN" TextColor="Black" BackgroundColor="White" Clicked="btnLogin_Clicked"/>
+                    <Button x:Name="btnRegister" HorizontalOptions="Fill" Text="REGISTRARSE" TextColor="Black" BackgroundColor="White" Clicked="btnRegister_Clicked"/>
                 </VerticalStackLayout>
             </Frame>
         </VerticalStackLayout>

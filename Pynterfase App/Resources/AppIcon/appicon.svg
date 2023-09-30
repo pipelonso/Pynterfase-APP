@@ -1,4 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="456" height="456" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="456" height="456" fill="#512BD4" />
+<svg
+   width="456"
+   height="456"
+   viewBox="0 0 456 456"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="appicon.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.61951754"
+     inkscape:cx="196.92743"
+     inkscape:cy="222.75398"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <rect
+     x="0"
+     y="0"
+     width="456"
+     height="456"
+     fill="#512BD4"
+     id="rect2"
+     style="fill:#282828;fill-opacity:1" />
+  <path
+     style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:20.0315;stroke-linejoin:round"
+     d="M 0,382.55575 382.55575,0 H 456 V 96.849557 L 96.849557,456 H 0 Z"
+     id="path1047" />
+  <path
+     style="fill:#2c2c2c;fill-opacity:1;stroke:none;stroke-width:20.0315;stroke-linejoin:round"
+     d="M 48.424779,456 456,48.424779 V 174.3292 L 174.3292,456 Z"
+     id="path1319" />
 </svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pynterfase_App.Paginas.PgRegister"
+             Title="PgRegister">
+    <Grid>
+        <Image Source="bg_login_pynterfase.png" Aspect="AspectFill"/>
+        <VerticalStackLayout VerticalOptions="Center" Padding="10">
+            <Frame BackgroundColor="#BF1C1C1C" Padding="10" VerticalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="REGISTRARSE" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <Line BackgroundColor="White"></Line>
+                    <Label Text="Nombre" TextColor="White"/>
+                    <Entry BackgroundColor="White" TextColor="Black" x:Name="txtName"/>
+                    <Label Text="Correo" TextColor="White" />
+                    <Entry Keyboard="Email" TextColor="Black" BackgroundColor="White" x:Name="txtEmail"/>
+                    <Label Text="Contraseña" TextColor="White" />
+                    <Entry Keyboard="Default" IsPassword="True" TextColor="Black" BackgroundColor="White"  x:Name="txtPassOne"/>
+                    <Label Text="Repetir contraseña" TextColor="White" />
+                    <Entry Keyboard="Default" IsPassword="True" TextColor="Black" BackgroundColor="White" x:Name="txtPassTwo " />
+                    <Button x:Name="btnRegister" HorizontalOptions="FillAndExpand" Text="REGISTRARSE" Clicked="btnRegister_Clicked" BackgroundColor="White" TextColor="Black"/>
+                    <Button x:Name="btnLogin" HorizontalOptions="FillAndExpand" Text="INICIAR SESIÓN" Clicked="btnLogin_Clicked" BackgroundColor="White" TextColor="Black"/>
+                    
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

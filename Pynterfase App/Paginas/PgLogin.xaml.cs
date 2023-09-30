@@ -44,4 +44,9 @@ public partial class PgLogin : ContentPage
 
 
     }
+
+    private void btnRegister_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Paginas.PgRegister());
+    }
 }

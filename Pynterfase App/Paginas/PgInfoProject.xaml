@@ -8,6 +8,7 @@
         <Image Source="bg_info_proj.png" Aspect="AspectFill" x:Name="imgBack"/>
 
         
+
         <ScrollView>
             <VerticalStackLayout Padding="10" BackgroundColor="#7F44CD2A" x:Name="bg_Vertical" Spacing="10">
                 <Frame BackgroundColor="white" >
@@ -62,5 +63,8 @@
                 </Frame>
             </VerticalStackLayout>
         </ScrollView>
+
+        <Button x:Name="btnAdd" Text="+" FontSize="20" VerticalOptions="End" HorizontalOptions="End" HeightRequest="70" WidthRequest="70" CornerRadius="50" TranslationY="-50" TranslationX="-50" Clicked="btnAdd_Clicked"/>
+
     </Grid>
 </ContentPage>

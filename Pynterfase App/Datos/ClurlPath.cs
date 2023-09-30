@@ -12,7 +12,7 @@ namespace Pynterfase_App.Datos
         public string mtdGetUrlPath()
         {
             //Recordar poner /api al final
-            string path = "http://localhost:50771/api/";
+            string path = "https://6e47-2800-484-ae75-ac00-e04e-b7d9-16a0-83e8.ngrok-free.app/api/";
             return path;
 
         }
