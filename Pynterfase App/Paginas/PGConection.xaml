@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pynterfase_App.Paginas.PGConection"
+             Title="LOCALIZAR SERVIDOR">
+    <Grid>
+        <Image Source="bg_login_pynterfase.png" Aspect="AspectFill"/>
+        <VerticalStackLayout VerticalOptions="Center">
+            <Label HorizontalTextAlignment="Center" Text="Esta pantalla esta diseñada para conectar la aplicación a un servidor en el caso en que se cambie de dirección y la aplicación no se pueda conectar, para conectarlo necesitas la url donde se encuentra el servidor, Debe terminar con /"/>
+            <Entry x:Name="txtDirection" HorizontalOptions="FillAndExpand" />
+            <Button Text="Vincular" HorizontalOptions="CenterAndExpand"  Clicked="btnConect_Clicked" x:Name="btnConect"/>
+        </VerticalStackLayout>
+        
+    </Grid>
+</ContentPage>

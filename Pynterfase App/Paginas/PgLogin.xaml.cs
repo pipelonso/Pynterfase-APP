@@ -49,4 +49,9 @@ public partial class PgLogin : ContentPage
     {
         Navigation.PushAsync(new Paginas.PgRegister());
     }
+
+    private void GotoConection_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Paginas.PGConection());
+    }
 }

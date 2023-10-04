@@ -54,6 +54,7 @@
 	  <None Remove="Resources\Images\bg_info_proj_red.svg" />
 	  <None Remove="Resources\Images\bg_login_pynterfase.png" />
 	  <None Remove="Resources\Images\bg_projects.svg" />
+	  <None Remove="Resources\Images\globe.svg" />
 	  <None Remove="Resources\Images\go_next.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
 	</ItemGroup>
@@ -65,6 +66,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Paginas\PGConection.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\PgInfoProject.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

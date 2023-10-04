@@ -12,10 +12,37 @@ namespace Pynterfase_App.Datos
         public string mtdGetUrlPath()
         {
             //Recordar poner /api al final
-            string path = "https://6e47-2800-484-ae75-ac00-e04e-b7d9-16a0-83e8.ngrok-free.app/api/";
+            string path = mtdGetSavedPath() + "api/";
             return path;
 
         }
+
+        public void mtdSetPath(string texto)
+        {
+
+            string Ruta = FileSystem.AppDataDirectory;
+            string filepath = Path.Combine(Ruta, "serverPath.txt");            
+            File.WriteAllText(filepath, texto);  
+                                             
+        }
+
+        public string mtdGetSavedPath() 
+        {
+
+            string Ruta = FileSystem.AppDataDirectory;
+            string filepath = Path.Combine(Ruta, "serverPath.txt");
+            if (File.Exists(filepath))
+            {
+
+                string texto = File.ReadAllText(filepath);
+                return texto;
+
+            }
+
+            return "localhost:88/Help";
+
+        }
+
 
 
     }

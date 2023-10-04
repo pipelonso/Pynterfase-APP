@@ -19,8 +19,19 @@
                     <Button x:Name="btnLogin" HorizontalOptions="Fill" Text="INICIAR SESIÓN" TextColor="Black" BackgroundColor="White" Clicked="btnLogin_Clicked"/>
                     <Button x:Name="btnRegister" HorizontalOptions="Fill" Text="REGISTRARSE" TextColor="Black" BackgroundColor="White" Clicked="btnRegister_Clicked"/>
                 </VerticalStackLayout>
+                
+                
+                
             </Frame>
         </VerticalStackLayout>
+
+        <Frame HeightRequest="60" WidthRequest="60" VerticalOptions="End" HorizontalOptions="End" TranslationX="-20" TranslationY="-20" BackgroundColor="Black" Padding="0">
+            <Grid>
+                <Image Source="globe.png" WidthRequest="40" HeightRequest="40"/>
+                <Button x:Name="GotoConection" BackgroundColor="Transparent" Clicked="GotoConection_Clicked" WidthRequest="40" HeightRequest="40"/>
+            </Grid>
+        </Frame>
+            
     </Grid>
     
 </ContentPage>
